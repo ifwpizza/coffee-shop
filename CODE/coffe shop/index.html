@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aryan's Hard Coffee Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #faf7f3;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #4b2e2e;
+            margin: 10px auto;
+        }
+
+        /* Cards */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            border: 2px solid #e0d6cc;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+
+        .box h3 {
+            margin-top: 15px;
+            color: #4b2e2e;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        /* Divider */
+        .divider {
+            width: 70%;
+            height: 2px;
+            background-color: #ddd;
+            margin: 50px auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ Aryan's Hard Coffee Shop😜</h1>
+    <p>The best coffee in town</p>
+</header>
+
+<!-- About & Specialities -->
+<section class="section">
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee Shop">
+            <h3>About Us</h3>
+            <p>
+                We are a cozy coffee shop serving freshly brewed coffee,
+                delicious snacks, and warm vibes every day.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Special Coffee">
+            <h3>Our Specialities</h3>
+            <ul>
+                <li>Fresh Brewed Coffee</li>
+                <li>Espresso Drinks</li>
+                <li>Homemade Pastries</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Menu -->
+<section class="section">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86" alt="Coffee">
+            <h3>Coffee</h3>
+            <ul>
+                <li>Latte</li>
+                <li>Cappuccino</li>
+                <li>Americano</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1513639725746-c5d3e861f32a" alt="Tea">
+            <h3>Tea</h3>
+            <ul>
+                <li>Green Tea</li>
+                <li>Black Tea</li>
+                <li>Herbal Tea</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Pastries">
+            <h3>Pastries</h3>
+            <ul>
+                <li>Croissant</li>
+                <li>Muffin</li>
+                <li>Bagel</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Coffee Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
